@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import profileImage from '../asstes/profileImage.svg'
-import ProfileCard from './ProfileCard'
 
 
 function Card({profileCard, setProfileCard, selectedKey, setShowProfile}) {
-    const[loading, setLoading] = useState(false)
     const [imageProfile, setImageProfile] = useState(profileCard?.avatar);
     function toggleClick(){
         setProfileCard(profileCard);
